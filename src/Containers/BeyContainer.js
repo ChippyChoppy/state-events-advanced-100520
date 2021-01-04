@@ -1,14 +1,19 @@
 import React from "react";
 import BeyCard from '../Components/BeyCard'
 
-class BeyContainer extends React.Component {
-  render() {
-    return (
-      <div className="index">
-        <h1>Index</h1>
-      </div>
-    );
+function BeyContainer(props) {
+
+  function renderBeyCards() {
+    return props.beyArray.map(beyEl => <BeyCard key={beyEl.id} beyObj={beyEl} clickHandler={props.clickHandler} />)
   }
+
+  return (
+    <div className="index">
+      <h1>Index</h1>
+      {renderBeyCards()}
+    </div>
+  );
+
 }
 
 export default BeyContainer;
