@@ -22,3 +22,11 @@ You are given an api.js file that exports an array of objects that look like thi
 ![beyonce gif](bey-slay.gif)
 
 CSS/Design: @cmccarthy15
+
+
+## Install JSON Server
+  - npm install -g json-server
+  1. in root directory: create a `.json` file (usually db.json)
+  2. Create your JSON data (google and memorize JSON data structure)
+    2.5 Create a json-server.json file to change the port in root directory
+  3. Run `json-server --watch db.json`
